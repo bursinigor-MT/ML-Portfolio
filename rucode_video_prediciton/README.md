@@ -62,8 +62,8 @@ n_jobs=-1
 ---
 
 ## Графики важности признаков
-![XGBoost Feature Importance](xgbm_fi.png)
-![LightGBM Feature Importance](lgbm_fi.png)
+![XGBoost Feature Importance](xgbm_fi.jpg)
+![LightGBM Feature Importance](lgbm_fi.jpg)
 
 ---
 
