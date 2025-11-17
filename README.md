@@ -6,7 +6,10 @@
 ### [Customer Churn Prediction](./churn_predict)
 
 ### [Video Engagement Prediction](./rucode_video_prediciton)
-<img width="350" height="233" alt="Image" src=".github/images/villainous-mac-cheeze.jpg">
 
-<h3 align="center">Here you will find food for your body.</h3>
+<div align="center">
+  <img width="350" alt="MF DOOM" src=".github/images/villainous-mac-cheeze.jpg">
+  <h3>Here you will find food for your body.</h3>
+</div>
+
 
