@@ -1,0 +1,21 @@
+# виртуальное окружение (для любых проектов)
+venv/
+.venv/
+env/
+ENV/
+
+# Python кэш
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+HH_DataJobs_Analysis/data/*.csv
+!HH_DataJobs_Analysis/data/.gitkeep
+HH_DataJobs_Analysis/src/main.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
