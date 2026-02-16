@@ -72,27 +72,23 @@ def plot_DB():
             st.plotly_chart(ps_tree)
 
     with tab_empl:
-        left_col, right_col = st.columns([2,1]) 
-
         #Работодатели
-        with left_col:
-            data_empl = None
-            if selected_lvl == 'All':
-                level_data = data 
-            else:
-                level_data = data[data['level'] == selected_lvl]
+        data_empl = None
+        if selected_lvl == 'All':
+            level_data = data 
+        else:
+            level_data = data[data['level'] == selected_lvl]
 
-            data_empl = level_data['empl_name'].value_counts().reset_index(name='count').sort_values('count', ascending=False).head(selected_count_emp)
+        data_empl = level_data['empl_name'].value_counts().reset_index(name='count').sort_values('count', ascending=False).head(selected_count_emp)
 
-            ps_empl = px.bar(data_empl, x='count', y='empl_name',
-                             orientation='h',
-                             color='count',
-                            color_continuous_scale='Viridis')
+        ps_empl = px.bar(data_empl, x='count', y='empl_name',
+                         orientation='h',
+                         color='count',
+                        color_continuous_scale='Viridis')
 
-            ps_empl.update_layout(yaxis={'categoryorder':'total ascending'})
-            st.plotly_chart(ps_empl)
+        ps_empl.update_layout(yaxis={'categoryorder':'total ascending'})
+        st.plotly_chart(ps_empl)
 
-        st.markdown('---')
     
     with tab_ratios:
         col1, col2 = st.columns(2)
